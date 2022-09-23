@@ -143,6 +143,7 @@ const Navbar = () => {
             width={148}
             height={28}
             alt="Logo"
+            onClick={() => router.push("/")}
           />
           ) : (
             <Image
@@ -150,6 +151,7 @@ const Navbar = () => {
             width={148}
             height={28}
             alt="Logo"
+            onClick={() => router.push("/")}
           />
           )}
           <div className="flex items-center space-x-4">

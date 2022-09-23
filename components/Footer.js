@@ -283,7 +283,7 @@ const Footer = () => {
           );
         })}
       </div>
-      <div className="bg-hostinger-blue/10 flex items-center justify-between flex-wrap px-7 py-4">
+      <div className="border-t-2 border-hostinger-Dark-blue/80 flex items-center justify-between flex-wrap px-7 py-4">
         <div className="flex items-center justify-center md:justify-start w-full md:w-3/4">
             <p className="font-semibold ">© 2022 Aman Janwani</p>
         </div>
