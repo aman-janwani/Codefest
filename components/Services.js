@@ -91,7 +91,7 @@ const Services = () => {
       >
         <h2 className="text-3xl md:text-4xl font-bold">Our services</h2>
       </motion.div>
-      <div className="p-10 mt-10 grid grid-rows-4 grid-flow-col overflow-x-scroll gap-10 bg-hostinger-Dark-blue/10 pl-6 pr-4 w-11/12  rounded-2xl">
+      <div className="p-10 mt-10 grid grid-rows-4 grid-flow-col overflow-x-scroll gap-10 border-2 border-hostinger-Dark-blue/80 pl-6 pr-4 w-11/12  rounded-2xl">
         {/* Services List */}
         {servicesList.map((service) => {
           return (
@@ -101,12 +101,13 @@ const Services = () => {
                 x: -100,
               }}
               transition={{
-                duration: 1.5,
+                duration: 0.005,
               }}
               whileInView={{ x: 0 }}
+              whileHover={{ scale: 1.1, transition: { duration: 0.001 } }}
               viewport={{ once: true }}
               key={service.id}
-              className="items-center flex space-x-4 min-w-[20rem]"
+              className="items-center flex space-x-4 min-w-[20rem] duration-500 hover:bg-hostinger-Dark-blue/5 rounded-xl p-2 cursor-pointer w-fit"
             >
               <Image
                 alt={service.title}
